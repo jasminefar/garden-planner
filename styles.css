@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f8ff;
+}
+
+#garden-planner {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+#controls {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#garden {
+    width: 600px;
+    height: 600px;
+    background-color: #e0ffe0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 2px;
+}
+
+.grid-cell {
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.tree, .flower, .bush, .pond {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.tree {
+    background-image: url('https://example.com/tree.png');
+}
+
+.flower {
+    background-image: url('https://example.com/flower.png');
+}
+
+.bush {
+    background-image: url('https://example.com/bush.png');
+}
+
+.pond {
+    background-image: url('https://example.com/pond.png');
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}
